@@ -22,15 +22,17 @@
     <p>Image Link Test</p>
     <!--기본적인 리스트 형태.-->
     <hr color="white" width="100%">
-    <select id='selectNumberId' name="selectNumber" onchange="ChangeValue()">
-      <option value ="" selected>--선택--</option>
-      <option value="1">one</option>
-      <option value="2">two</option>
-      <option value="3">three</option>
-      <option value="4">four</option>
-      <option value="5">five</option>
-      <option value="6">six</option>
-    </select>
+    <p>Select Box : 
+      <select id='selectNumberId' name="selectNumber" onchange="ChangeValue()">
+        <option value ="" selected>--선택--</option>
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+        <option value="4">four</option>
+        <option value="5">five</option>
+        <option value="6">six</option>
+      </select>
+    </p>
     <script>
       function ChangeValue()
       {
@@ -41,7 +43,7 @@
     <p>SelectBox Test</p>
     <hr color="white" width="100%">
     아무거나 입력해주세요 : <input id='testPrintId' type="text" placeholder="입력해주세요." onkeyup='OnPrintTest()'> <br>
-    <p><div id='testPrintResult'></div></p>
+    <div id='testPrintResult'></div>
     <script>
       function OnPrintTest()
       {
