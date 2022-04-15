@@ -41,16 +41,17 @@
       </script>
     <p></p>
     아무거나 입력해주세요 : <input id='testPrintId' type="text" placholder="testHolder" onkeyup='OnPrintTest()'> <br>
-    <div id='result'>
+    입력한게 출력될겁니다 : <div id='result'>
    <script>
      function OnPrintTest()
      {
-        //const testPrint = document.getElementById('testPrintId').value;
-        //document.getElementById('result').innerText = testPrint;
-       alert("TestPrint");
+        const testPrint = document.getElementById('testPrintId').value;
+        document.getElementById('result').innerText = testPrint;
+       //alert("TestPrint");
      }
     </script>
-    
+    <button type="button" onclik="location.href='https://www.youtube.com/?gl=KR';"> 유튜브<br>
+      바로가기</button>
   </body>
 </html>
 
