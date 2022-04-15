@@ -37,20 +37,19 @@
         var selectedVar = document.getElementById('selectNumberId');
         alert("TestNumber : " + selectedVar.options[selectedVar.selectedIndex].text);
       }
-      
-      </script>
-    <p></p>
-    아무거나 입력해주세요 : <input id='testPrintId' type="text" placholder="testHolder" onkeyup='OnPrintTest()'> <br>
-    <p>입력한게 출력될겁니다 : <div id='testPrintResult'></div></p>
-   <script>
-     function OnPrintTest()
-     {
+    </script>
+    <br>
+    아무거나 입력해주세요 : <input id='testPrintId' type="text" placeholder="입력해주세요." onkeyup='OnPrintTest()'> <br>
+    <div id='testPrintResult'></div>
+    <script>
+      function OnPrintTest()
+      {
         const testPrint = document.getElementById('testPrintId').value;
         document.getElementById('testPrintResult').innerText = testPrint;
        //alert("TestPrint");
-     }
-    </script>
-    <p></p>
+       }
+      </script>
+    <hr color="white" width="100%">
     <button type="button" onclick="window.open='https://www.youtube.com/?gl=KR';"> 유튜브<br>
       바로가기</button>
   </body>
