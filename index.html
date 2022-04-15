@@ -41,12 +41,12 @@
       </script>
     <p></p>
     아무거나 입력해주세요 : <input id='testPrintId' type="text" placholder="testHolder" onkeyup='OnPrintTest()'> <br>
-    입력한게 출력될겁니다 : <div id='result'>
+    입력한게 출력될겁니다 : <div id='testPrintResult'>
    <script>
      function OnPrintTest()
      {
         const testPrint = document.getElementById('testPrintId').value;
-        document.getElementById('result').innerText = testPrint;
+        document.getElementById('testPrintResult').innerText = testPrint;
        //alert("TestPrint");
      }
     </script>
