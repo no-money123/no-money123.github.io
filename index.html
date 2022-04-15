@@ -21,7 +21,7 @@
     </a>
     <p>Image Link Test</p>
     <!--기본적인 드롭박스 리스트 형태.-->
-    <select name="selectNumber">
+    <select name="selectNumber" onchange="ChangeValue()">
       <option value ="" selected>--선택--</option>
       <option value="1">one</option>
       <option value="2">two</option>
@@ -39,9 +39,18 @@
       
       </script>
     <p></p>
-    아무숫자나 입력해주세요 : <input type="text" placholder="testHolder"> 
-    &nbsp;&nbsp;
-    <button type"button"> OK! </button>
+    아무거나 입력해주세요 : <input id="testPrintId" type="text" placholder="testHolder" onkeyup='OnPrintTest()'> <br>
+    <div id="result">
+   <script>
+     function OnPrintTest()
+     {
+        const testPrint = document.getElementById("testPrintId").value;
+        document.getElementById("result").innerText = name
+     }
+    </script>
+    
+    
+    
     
   </body>
 </html>
