@@ -30,6 +30,14 @@
       <option value="5">five</option>
       <option value="6">six</option>
       </select>
+    <script>
+      function ChangeValue()
+      {
+        var selectedVar = document.getElementByName('selectNumber');
+        alert("TestNumber = " + selectedVar,options[selectedVar.selectedIndex].text);
+      }
+      
+      </script>
     <p></p>
     아무숫자나 입력해주세요 : <input type="text" placholder="testHolder">
   </body>
