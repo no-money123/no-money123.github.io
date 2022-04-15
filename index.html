@@ -10,7 +10,7 @@
     <h1>Test Page</h1>
     <!--p 는 한줄띄고 시작하겠다는뜻-->
     <p>H1 Test</p>
-    <hr color="white" width = "100%">
+    <hr color="white" width="100%">
     <h2>Test Page</h2>
     <p>H2 Test</p>
     <br>
@@ -20,7 +20,8 @@
          alt="Test Image Load Failed" width="100" height="100">
     </a>
     <p>Image Link Test</p>
-    <!--기본적인 드롭박스 리스트 형태.-->
+    <!--기본적인 리스트 형태.-->
+    <hr color="white" width="100%">
     <select id='selectNumberId' name="selectNumber" onchange="ChangeValue()">
       <option value ="" selected>--선택--</option>
       <option value="1">one</option>
@@ -34,24 +35,20 @@
       function ChangeValue()
       {
         var selectedVar = document.getElementById('selectNumberId');
-        
         alert("TestNumber : " + selectedVar.options[selectedVar.selectedIndex].text);
       }
       
       </script>
     <p></p>
     아무거나 입력해주세요 : <input id='testPrintId' type="text" placholder="testHolder" onkeyup='OnPrintTest()'> <br>
-    <div id="result">
+    <div id='result'>
    <script>
      function OnPrintTest()
      {
         const testPrint = document.getElementById('testPrintId').value;
-        document.getElementById('result').innerText = name;
+        document.getElementById('result').innerText = testPrint;
      }
     </script>
-    
-    
-    
     
   </body>
 </html>
