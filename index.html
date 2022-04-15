@@ -7,11 +7,11 @@
     <title>TestSite</title>
   </head>
   <body style="background-color:#000000; color:#ffffff; text-align:center;">
-    <h1>Test Page</h1>
-    <!--p 는 한줄띄고 시작하겠다는뜻-->
+    <h1>H1 Test</h1>
+    <!--br 줄넘김-->
     <p>H1 Test</p>
     <hr color="white" width="100%">
-    <h2>Test Page</h2>
+    <h2>H2 Test</h2>
     <p>H2 Test</p>
     <br>
     <!--이게 뭔가 링크걸어주는거인듯. 앞에다가 달아주면 될듯.-->
@@ -38,7 +38,8 @@
         alert("TestNumber : " + selectedVar.options[selectedVar.selectedIndex].text);
       }
     </script>
-    <br>
+    <p>SelectBox Test</p>
+    <hr color="white" width="100%">
     아무거나 입력해주세요 : <input id='testPrintId' type="text" placeholder="입력해주세요." onkeyup='OnPrintTest()'> <br>
     <div id='testPrintResult'></div>
     <script>
@@ -49,9 +50,11 @@
        //alert("TestPrint");
        }
       </script>
+    <p>Input Print Test</p>
     <hr color="white" width="100%">
     <button type="button" onclick="location.href='https://www.youtube.com/?gl=KR';"> 유튜브<br>
       바로가기</button>
+    <p>Button Test</p>
   </body>
 </html>
 
