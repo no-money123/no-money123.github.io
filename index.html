@@ -64,7 +64,6 @@
         
       </ul>
     </div>
-     &nbsp;
     <div id ="SearchId">
       <input id="testSearchId" type="text" placeholder="검색어를 입력해주세요."> &nbsp;
       <button type="button" onclick = OnTestSearch()> TestSearch
@@ -72,7 +71,7 @@
       function OnTestSearch()
       {
         const testSearch = document.getElementById('testSearchId').value;
-        location.href=""+testSearch;
+        location.href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query="+testSearch;
         
        }
       </script>
