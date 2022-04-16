@@ -7,6 +7,68 @@
     <title>TestSite</title>
   </head>
   <body style="background-color:#000000; color:#ffffff; text-align:center;">
+    <div id ="dropdownBox">
+      <ul>
+        <li><a href="#"><Menu1></a>
+          <ul>
+            <li><a href="#">Sub_Menu1</a></li>
+            <li><a href="#">Sub_Menu2</a></li>
+            <li><a href="#">Sub_Menu3</a></li>
+          </ui>
+        </li>
+          <li><a href="#"><Menu2></a>
+          <ul>
+            <li><a href="#">Sub_Menu1</a></li>
+            <li><a href="#">Sub_Menu2</a></li>
+            <li><a href="#">Sub_Menu3</a></li>
+          </ui>
+        </li>
+            <li><a href="#"><Menu3></a>
+          <ul>
+            <li><a href="#">Sub_Menu1</a></li>
+            <li><a href="#">Sub_Menu2</a></li>
+            <li><a href="#">Sub_Menu3</a></li>
+          </ui>
+        </li>
+              <style type="text/css">
+                {
+                  margin : 0;
+                  padding : 0;
+                }
+                ui li { list-style : none; }
+                a { text-decoration : none; color : #333;}
+                #dropdownBox {
+                  font:bold 16px "malgun gothinc";
+                  width:700px;
+                  height:50px;
+                  background:#ccc;
+                  color:white;
+                  line-height:50px;
+                  margin:0 auto;
+                  text-align:center;
+                  
+                }
+                #dropdownBox > ul > li {
+                  float:left;
+                  width:140px;
+                  position:relative;
+                }
+                #dropdownBox > ul > li > ul {
+                  width:130px;
+                  display:none;
+                  position:absolute;
+                  font-size:14px;
+                  background:skyblue;
+                }
+                #dropdownBox > ul > li:hover > ul {
+                  display:block;                  
+                }
+                #dropdownBox > ul > li > ul > li:hover {
+                  background:orage;                  
+                  trasition:ease 1s;
+                }
+          
+    </div>
     <h1>H1 Test</h1>
     <p>H1 Test</p>
     <hr color="white" width="100%">
